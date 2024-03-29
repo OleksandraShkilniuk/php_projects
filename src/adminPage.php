@@ -74,7 +74,7 @@ if(isset($_COOKIE)) {
 
 </p>
 
-<form action="adminPage.php" method="POST">
+<form action="/adminPage.php" method="POST">
     <button type="submit" class="btn btn-light btn-outline-dark m-3" name="mode"
             style="width: 100px;" value="lightMode">Light Mode</button>
     <button type="submit" class="btn btn-dark btn-outline-dark text-white m-3" name="mode"

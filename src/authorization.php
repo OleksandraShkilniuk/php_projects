@@ -9,7 +9,7 @@ if(!empty($_SESSION['is_auth'])){
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
     if($_POST['email'] === 'some@gmail.com' && $_POST['password'] === '123456') {
         $_SESSION['is_auth'] = true;
-        header('Location: /');
+        header('Location: /adminPage.php');
         exit();
     }
 }
@@ -75,8 +75,6 @@ $currentMode = isset($_COOKIE['currentMode'])&& $_COOKIE['currentMode'] == '1'? 
             </button>
 
         </div>
-
-
 
     </form>
 </div>
