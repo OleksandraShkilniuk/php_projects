@@ -14,7 +14,7 @@ if(isset($_POST['mode'])){
     setcookie('currentMode', $mode, time() + (86400 * 30), "/");
 
     //refreshes the page for the changes to come into force
-    header('Location: /index.php');
+    header('Location: /adminPage.php');
     //stops further script
     exit();
 }
@@ -74,7 +74,7 @@ if(isset($_COOKIE)) {
 
 </p>
 
-<form action="index.php" method="POST">
+<form action="adminPage.php" method="POST">
     <button type="submit" class="btn btn-light btn-outline-dark m-3" name="mode"
             style="width: 100px;" value="lightMode">Light Mode</button>
     <button type="submit" class="btn btn-dark btn-outline-dark text-white m-3" name="mode"
