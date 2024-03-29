@@ -2,7 +2,7 @@
 session_start();
 
 if(!empty($_SESSION['is_auth'])){
-    header('Location: /index.php');
+    header('Location: /adminPage.php');
     exit();
 }
 
