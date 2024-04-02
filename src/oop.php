@@ -72,8 +72,8 @@ $product2 = new Product('Навушники', 200);
 $product3 = new Product('Чохол для телефону', 50);
 
 // Створюємо замовлення
-$order1 = new Order(1);
-$order2 = new Order(2);
+$order1 = new Order();
+$order2 = new Order();
 
 // Додаємо товари до замовлень
 $order1->addProduct($product1, 2); // 2 телефони
